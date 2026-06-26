@@ -1,0 +1,1 @@
+function next(id){document.querySelector(".active").classList.remove("active");document.getElementById(id).classList.add("active")}function moveNo(){let b=document.getElementById("no");b.style.position="absolute";b.style.left=Math.random()*250+"px";b.style.top=Math.random()*300+"px";b.style.transform="scale(.8)";setTimeout(()=>b.style.display="none",4000);}

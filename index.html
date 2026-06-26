@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Happy Birthday Archi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <section id="intro" class="scene active">
+            <h1>A surprise is waiting for you... ✨</h1><button onclick="next('cake')">Begin</button>
+        </section>
+        <section id="cake" class="scene">
+            <h1>Happy Birthday, Archi 🎂</h1>
+            <div class="cake">🎂</div><button onclick="next('question')">Blow the Candles</button>
+        </section>
+        <section id="question" class="scene">
+            <h2>Can I steal 2 minutes of your day? ❤️</h2><button onclick="next('letter')">Yes</button><button id="no"
+                onmouseover="moveNo()">No</button>
+        </section>
+        <section id="letter" class="scene">
+            <h2>💌 Happy Birthday Miss Captain 💜</h2><button onclick="next('scratch')">Open Scratch Card</button>
+        </section>
+        <section id="scratch" class="scene">
+            <div id="msg">Happy Birthday to the cutest girl I have ever met in my life.<br>Thank you for being in my
+                life.<br>You are the cutest thing I could ever get.<br>Stay happy. Stay bindass.<br>Keep flying... ✨💜
+            </div><button onclick="next('gift')">Continue</button>
+        </section>
+        <section id="gift" class="scene">
+            <h2>This is the gift for you 🎁</h2>
+            <div style="font-size:80px">🟨❤️</div>
+            <p>Cute Minion holding a heart 💜</p>
+            <div style="font-size:70px">💐</div>
+            <p>With lots of wishes,<br><b>— Ashish</b></p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
